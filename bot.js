@@ -17,5 +17,15 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+
+    if (message.content === 'Oi') {
+
+    	message.reply('Tchau!');
+
+  	}
+
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
